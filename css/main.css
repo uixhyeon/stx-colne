@@ -1,5 +1,7 @@
 @charset "UTF-8";
  /*폰트적용  */
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
 /* css파일 연결 */
 @import url(header.css);
 @import url(visual.css);
@@ -20,12 +22,12 @@ li{
 a{
     text-decoration: none;
     color: #333;
-font: ;
+font:"Orbitron", sans-serif; ;
 }
 body{
     font-family: "Orbitron", sans-serif;
-    font font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    /* 있다 폰트적용하며 바꾸기 */
+    /* font font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+    /* 있다 폰트적용하며 바꾸기 완.*/
 }
 /* 공통영역 */
 .container{

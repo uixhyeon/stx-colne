@@ -24,6 +24,7 @@
 }
 .logo img{
     width: 100%;
+    /* padding-right: 15px ; */
 }
 /* manu */
 .nav{
@@ -50,9 +51,11 @@ width: calc(100% / 6);
 }
 .lang > a {
     width: 68px;
+    
 }
 .lang > a > img {
     width: 100%;
+    padding-right: 7px;
 }
 .lang-list{
     padding-top: 5px;
