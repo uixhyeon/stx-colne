@@ -1,0 +1,56 @@
+@charset "UTF-8";
+body{
+    height: 1500px;
+}
+
+.visual{
+    position: relative;
+    width: 100%;
+    background-color: antiquewhite;
+    background: url("../images/img_visual01.png") no-repeat center fixed;
+    height: 910px;
+    background-size: cover;
+    padding-top: 80px ;
+     color: #fff;
+}
+/* 
+글자상자 내릴때 ! 비주얼인너를 내린다.
+공통으로 내려가기 위힘 */
+.visual-inner{
+    padding-top: 245px;
+}
+
+.viseal-slogan{
+    position: relative;
+    font-size: 70px;
+    color: white;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.viseal-slogan::before{
+    position: absolute;
+    left: 0px;
+    top: -48px;
+    width: 60px;
+    height: 5px;
+    background-color: #ed1c24;
+    content: '';
+}
+
+.visual-txt{
+    display: block;
+    font-size: 21px;
+   margin-top: 42px;
+}
+.visual-btn{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 33px;
+    height: 33px;
+    font-size: 0;
+    border: 0;
+    background: url(../images/bg_common.png) no-repeat;
+    background-position:-122px 0px ;
+}

@@ -1,0 +1,125 @@
+@charset "UTF-8";
+.business {
+  /* 빠진것 v */
+  padding: 100px;
+}
+.business-top {
+  /* 빠진것 v */
+  margin-bottom: 70px;
+}
+.business-inner {
+  text-align: center;
+}
+
+.business-title {
+  position: relative;
+  padding-bottom: 22px;
+  color: #111;
+  font-family: "NotoSansBold";
+  font-size: 44px;
+  padding-top: 100px;
+  text-align: center;
+}
+/*  다시 해보기
+.business-title::after {
+  content: "";
+  background-color: red;
+  width: 40px;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} */
+
+.business-title::after {
+  position: absolute;
+  left: 49%;
+  bottom: 0px;
+  width: 37px;
+  height: 4px;
+  background-color: #ff0000;
+  content: "";
+}
+
+.business-desc {
+  color: #444444;
+  /* font: 16px; */
+  /* 빠진것 v */
+  margin-top: 25px;
+  text-align: center;
+}
+/* 간츤영역이라 하나로 대채 */
+.business-list {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  background-color: aqua;
+  display: flex;
+}
+.business-list > li {
+  width: calc(100% / 5);
+  background: url("../images/img_business.png") no-repeat;
+  background-position: 0px 0px;
+}
+/* -240을 더해서 직접 적거나 */
+.business-list > li:nth-child(1) {
+  background-position: calc(240px * 0) 0px;
+}
+.business-list > li:nth-child(2) {
+  /* background-position: -240px 0px; */
+  background-position: calc(240px * -1) 0px;
+}
+.business-list > li:nth-child(3) {
+  background-position: calc(240px * -2) 0px;
+}
+.business-list > li:nth-child(4) {
+  background-position: calc(240px * -3) 0px;
+}
+.business-list > li:nth-child(5) {
+  background-position: calc(240px * -4) 0px;
+}
+.business-list > li > a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-top: 100px;
+  font-size: 30px;
+  color: #fff;
+  background-color: rgba(244, 128, 37, 0);
+  transition: all 0.5s;
+}
+.business-list > li > a:hover {
+  background-color: rgba(244, 128, 37, 1);
+}
+.business-list > li > a::after {
+  content: "";
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("../images/bg_common.png") no-repeat;
+  width: 130px;
+  height: 112px;
+  background-position: 0px 0px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.business-list > li > a:hover::after {
+  opacity: 1;
+}
+.business-list > li:nth-child(1) > a::after {
+  background-position: -164px 0px;
+}
+.business-list > li:nth-child(2) > a::after {
+  background-position: -298px 0px;
+}
+.business-list > li:nth-child(3) > a::after {
+  background-position: -0px -117px;
+}
+.business-list > li:nth-child(4) > a::after {
+  background-position: -139px -122px;
+}
+.business-list > li:nth-child(5) > a::after {
+  background-position: -274px -115px;
+}
