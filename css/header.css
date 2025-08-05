@@ -20,16 +20,7 @@
     /* background-color: pink; */
     align-items: center;
 }
-/* logo */
-.logo{
-    width: 220px;
 
-}
-.logo img{
-    width: 100%;
-    /* padding-right: 15px ; */
-}
-/* manu */
 .nav{
     display: flex;
     /* background-color: blueviolet; */

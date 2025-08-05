@@ -25,6 +25,9 @@ a{
 font:"Orbitron", sans-serif; ;
 }
 body{
+    width: 100vw;
+    height: 100vh;
+
     font-family: "Noto sans", sans-serif;
     /* font font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
     /* 있다 폰트적용하며 바꾸기 완.*/

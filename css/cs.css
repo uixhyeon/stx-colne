@@ -43,8 +43,12 @@ cursor a p .cs-text{
     padding: 40px 56px;
 }
 .customer a p{
-        font-size: 30px;
+   
     color: #000;
     font-family: 'NotoSansMedium';
 }
 
+.faq-title, .cs-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
