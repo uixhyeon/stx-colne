@@ -23,14 +23,13 @@ margin: 0 auto;
     padding: 40px 56px;
 }
 .faq a p{
-        font-size: 30px;
+        /* font-size: 30px; */
     color: #000;
     font-family: 'NotoSansMedium';
 }
 cursor a p .cs-text{
     display: block;
-    margin-top: 15px;
-      margin-bottom: 20px;
+    padding-top: 10px;
 
 }
 .customer{
