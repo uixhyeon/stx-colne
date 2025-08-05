@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* @ 수정하기 */
+.cs{
+position: relative;
+width: 100%;
+padding: 60px 0 100px;
+background-color: #f8f8f8;
+margin: 0 auto;
+}
+.cs-inner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap:5px;
+}
+.faq{
+    width: 599px;
+    height: 200px;
+    background: url("../images/bg_faq.png") no-repeat 90% center #fff;;
+}
+.faq a{
+    display: inline-block;
+    padding: 40px 56px;
+}
+.faq a p{
+        font-size: 30px;
+    color: #000;
+    font-family: 'NotoSansMedium';
+}
+cursor a p .cs-text{
+    display: block;
+    margin-top: 15px;
+      margin-bottom: 20px;
+
+}
+.customer{
+    width: 599px;
+    height: 200px;
+    background: url("../images/bg_custom.png") no-repeat 90% center #fff;;
+     background-position: calc(100% - 40px);
+}
+.customer a{
+    display: inline-block;
+    padding: 40px 56px;
+}
+.customer a p{
+        font-size: 30px;
+    color: #000;
+    font-family: 'NotoSansMedium';
+}
+

@@ -3,25 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>STX건설-clone</title>
-    <!-- css -->
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/favicon/favicon-96x96.png"
-      sizes="96x96"
-    />
-    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link rel="manifest" href="assets/favicon/site.webmanifest" />
-    <!-- 섬색엔진최적화 코드 -->
+    <title>stx-clone</title>
     <!-- seo 엔진 최적화 -->
     <!-- 웹페이지의 설명을 정의 -->
     <meta name="description" content="STX건설 웹사이트입니다." />
@@ -43,12 +25,30 @@
     <meta property="og:image" content="images/metaimg.png" />
     <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
     <meta property="og:description" content="STX건설 웹사이트입니다." />
+    <!-- fivicon적용 -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/icon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="images/icon/favicon.svg" />
+    <link rel="shortcut icon" href="images/icon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/icon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="images/icon/site.webmanifest" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <!-- 전체 레이아웃 -->
     <div class="wrap">
-      <!-- 헤더(상단) -->
+      <!-- 상단 -->
       <header class="header">
-        <!-- 헤더 인너 -->
+        <!-- .header-inner -->
         <div class="header-inner">
           <!-- 로고 -->
           <a href="#" class="logo">
@@ -62,31 +62,33 @@
               <li><a href="#">사회공헌</a></li>
               <li><a href="#">홍보센터</a></li>
               <li><a href="#">고객지원</a></li>
+              <li><a href="#">채용정보</a></li>
             </ul>
-            <!-- 언어 -->
-            <div class="lang">
-              <!-- 이미지 -->
-
-              <a href="#"><img src="images/sm_logo.png" alt="" /></a>
-              <!-- 안에 -->
-              <ul class="lang-list">
-                <li><a href="#">eng</a></li>
-                <li><a href="#">kor</a></li>
-              </ul>
-            </div>
           </nav>
-          <!-- 인너 -->
+          <!-- 언어 -->
+          <div class="lang">
+            <!-- 이미지 -->
+            <a href="#">
+              <img src="images/sm_logo.png" alt="sm그룹" />
+            </a>
+            <!-- 언어 -->
+            <ul class="lang-list">
+              <li><a href="#">eng</a></li>
+              <li><a href="#">kor</a></li>
+            </ul>
+          </div>
         </div>
       </header>
-      <!-- 베너(비주얼) -->
+      <!--배너(비주얼)  -->
       <section class="visual">
         <div class="visual-inner container">
-          <h1 class="viseal-slogan">
-            BEST OF THE WORLD STX Engineering & Construction
+          <h1 class="visual-slogan">
+            BEST OF THE WORLD <br />
+            STX Engineering & Construction
           </h1>
-          <apa class="visual-txt">
-            세계최고를 향해 STX건설이 힘차게 질주합니다!
-          </apa>
+          <span class="visual-txt"
+            >세계최고를 향해 STX건설이 힘차게 질주합니다!</span
+          >
           <button class="visual-btn">버튼</button>
         </div>
       </section>
@@ -100,26 +102,158 @@
             </h2>
             <p class="business-desc">
               STX건설은 건물 역량 강화를 통해 건축, 주택, 토목 플랜트 사업
-              영역에서<br/> 탁월한 성과를 인정받은 기업으로 자연과 기술의 공간에
-              인류의 가치를 추구합니다.
+              영역에서 <br />
+              탁월한 성과를 인정받은 기업으로 자연과 기술의 공간에 인류의 가치를
+              추구합니다.
             </p>
           </div>
           <!-- 비즈니스 하단 -->
-          <div class="business-botom">
+          <div class="business-bottom">
             <ul class="business-list">
-<li><a href="#">건축사업</a></li>
-<li><a href="#">주택사업</a></li>
-<li><a href="#">토목사업</a></li>
-<li><a href="#">플랜트/공작기계사업</a></li>
-<li><a href="#">해외사업</a></li>
-
+              <li><a href="#">건축사업</a></li>
+              <li><a href="#">주택사업</a></li>
+              <li><a href="#">토목사업</a></li>
+              <li><a href="#">플랜트/공작기계사업</a></li>
+              <li><a href="#">해외사업</a></li>
             </ul>
           </div>
         </div>
       </section>
       <!-- 뉴스 -->
-      <!-- 고객세너 -->
+      <section class="news">
+        <!-- 배경색 -->
+        <div class="news-bg"></div>
+        <div class="news-inner container">
+          <!-- 공지사항 -->
+          <div class="news-wrap">
+            <h3>공지사항</h3>
+            <div class="news-content">
+              <ul class="news-list">
+                <li>
+                  <a href="#">
+                    <span class="news-txt"> 분할계획서 변경공고 </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="news-txt">
+                      에스티엑스건설자산관리 주식회사 해산결의에 따른 채권신고
+                      안내 공고 (2차)
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="news-txt">
+                      회사분할에 따른 주권제출 및 채권자 이의제출공고
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="news-txt"> 본점 소재지 변경 알림 </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 보도자료 -->
+          <div class="news-wrap">
+            <h3>보도자료</h3>
+            <div class="news-content">
+              <ul class="news-list">
+                <li>
+                  <a href="#">
+                    <span class="news-txt">
+                      STX건설, 춘천 레고랜드 테마파크 시공사 ‘선정’
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="news-txt">
+                      STX건설, 춘천 레고랜드 테마파크 시공사 ‘선정’
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="news-txt">
+                      STX건설, 춘천 레고랜드 테마파크 시공사 ‘선정’
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 고객센터 -->
+      <section class="cs">
+        <div class="cs-inner container">
+          <!-- faq -->
+          <div class="faq">
+            <a href="#">
+              <p class="faq-title">FQR</p>
+              <div class="faq-text">
+                STX건설 고객님들을 위해<br />
+                자주하시는 질문과 답변을 정리하였습니다.
+              </div>
+            </a>
+          </div>
+          <!-- 고객센터 -->
+          <div class="customer">
+            <a href="#">
+              <p class="cs-title">고객문의</p>
+              <div class="cs-text">
+                STX건설 고객님들을 위해<br />
+                자주하시는 질문과 답변을 정리하였습니다.
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
       <!-- 회사소개 -->
+      <section class="about">
+        <div class="about-inner container">
+          <div class="about-text">
+            <h2>ABOUT US</h2>
+            <div class="text-box">
+              <p class="strongT">
+                고객의 믿음과 신뢰로 성장하는<br />
+                STX건설이 되겠습니다.
+              </p>
+              <p class="justT">
+                STX건설 이름으로 세계 어디에서, 세계 누구와 겨뤄도 자신 있는
+                세계 최고를 향해 웅비합니다. STX건설이라는 날개를 하나 더 피고
+                세계로, 미래로 나아가는 STX건설의 힘찬 비상을 주목해 주십시오.
+              </p>
+            </div>
+          </div>
+          <div class="about-icon">
+            <ul class="about-icon">
+              <li>
+                <a href="#">
+                  <!-- bg_icon.png -->
+                  <span>경영이념</span></a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <!-- bg_icon.png -->
+                  <span>경영이념</span></a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <!-- bg_icon.png -->
+                  <span>경영이념</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <!-- 하단 -->
     </div>
   </body>
