@@ -6,6 +6,8 @@
 }
 .about-inner {
   width: 100%;
+  background: url("../images/img_about.png") no-repeat right;
+  background-size:500px ;
 }
 .about-text {
   width: 50%;
@@ -17,12 +19,15 @@
     color: #111;
     padding-top: 25px;
     margin-bottom: 40px;
-    background: url("../images/img_about.png") no-repeat;
-    background-size:500px 370px ;
 }
 .text-box {
+  width: 100%;
       position: relative;
     padding-left: 100px;
+}
+.strongT,
+.justT{
+  width: 100%;
 }
 .text-box::before{
   content: "";
@@ -34,10 +39,14 @@
   left: 0;
 }
 
-.about-icon {
+.about-list {
+  position: relative;
+  display: block;
   width: 100%;
+  height:170px ;
   display: flex;
 }
 .about-list > a {
-  display: inline-block;
+  display: block;
+  background: ;
 }
