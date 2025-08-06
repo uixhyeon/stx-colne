@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.about {
+  position: relative;
+  width: 100%;
+}
+.about-inner {
+  width: 100%;
+}
+.about-text {
+  width: 50%;
+  width: 447px;
+}
+.about-text > h2{
+  font-family: 'NotoSansBold';
+    font-size: 44px;
+    color: #111;
+    padding-top: 25px;
+    margin-bottom: 40px;
+    background: url("../images/img_about.png") no-repeat;
+    background-size:500px 370px ;
+}
+.text-box {
+      position: relative;
+    padding-left: 100px;
+}
+.text-box::before{
+  content: "";
+  width: 37px;
+  height: 5px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-icon {
+  width: 100%;
+  display: flex;
+}
+.about-list > a {
+  display: inline-block;
+}
